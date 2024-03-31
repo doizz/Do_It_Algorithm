@@ -1,3 +1,5 @@
+package BackJun.DFS;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -8,6 +10,7 @@ public class PJ11724_연결요소의개수 {
    static boolean visited[];
     static ArrayList<Integer>[] A;
     public static void main(String[] args) throws IOException {
+
 
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = new StringTokenizer(br.readLine());
@@ -28,6 +31,7 @@ public class PJ11724_연결요소의개수 {
             A[s].add(e);
             A[e].add(s);
         }
+
 
         int count = 0;
         for(int i=1 ; i<n ; i++){
